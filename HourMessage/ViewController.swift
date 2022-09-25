@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     var evening: Bool?
     var night: Bool?
     var dawn: Bool?
-    var hour: Int
     var dateNow: Date
     
     private lazy var hourMessageView: HourMessageView = {
@@ -31,7 +30,6 @@ class ViewController: UIViewController {
     
     init(dateNow: Date = Date.now) {
         self.dateNow = dateNow
-        self.hour = Calendar.current.dateComponents([.hour, .minute, .second], from: dateNow).hour ?? 0
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -57,6 +55,8 @@ class ViewController: UIViewController {
            calendar.timeZone = timeZone
            dateFormatter.timeZone = timeZone
         }
+        
+        var hour = Calendar.current.dateComponents([.hour, .minute, .second], from: dateNow).hour ?? 0
         
         print(dateNow)
         print(calendar)
