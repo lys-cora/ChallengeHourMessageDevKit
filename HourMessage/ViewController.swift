@@ -44,12 +44,7 @@ class ViewController: UIViewController {
         view.addSubview(hourMessageView)
         getHour(dateNow: dateNow)
         
-        NSLayoutConstraint.activate([
-            hourMessageView.topAnchor.constraint(equalTo: view.topAnchor),
-            hourMessageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            hourMessageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            hourMessageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        setupConstraints()
     }
     
     func getHour(dateNow: Date) {
@@ -124,5 +119,16 @@ class ViewController: UIViewController {
             hourMessageView.image.image = UIImage(named: "dawn")
             print("Ainda acordado?")
         }
-                                                         }
+            
+    }
+    
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+            hourMessageView.topAnchor.constraint(equalTo: view.topAnchor),
+            hourMessageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            hourMessageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            hourMessageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+
+    }
 }
