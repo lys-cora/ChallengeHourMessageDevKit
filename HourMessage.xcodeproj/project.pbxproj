@@ -10,12 +10,15 @@
 		8749B81928E010AD00A718AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81828E010AD00A718AC /* AppDelegate.swift */; };
 		8749B81B28E010AD00A718AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81A28E010AD00A718AC /* SceneDelegate.swift */; };
 		8749B81D28E010AD00A718AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81C28E010AD00A718AC /* ViewController.swift */; };
-		8749B82028E010AD00A718AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8749B81E28E010AD00A718AC /* Main.storyboard */; };
 		8749B82228E010AF00A718AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8749B82128E010AF00A718AC /* Assets.xcassets */; };
 		8749B82528E010AF00A718AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8749B82328E010AF00A718AC /* LaunchScreen.storyboard */; };
 		8749B83028E010AF00A718AC /* HourMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B82F28E010AF00A718AC /* HourMessageTests.swift */; };
 		8749B83A28E010AF00A718AC /* HourMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B83928E010AF00A718AC /* HourMessageUITests.swift */; };
 		8749B83C28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B83B28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift */; };
+		8749B84B28E0117900A718AC /* HourMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B84A28E0117900A718AC /* HourMessageView.swift */; };
+		8749B84D28E0119400A718AC /* String+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B84C28E0119400A718AC /* String+Resources.swift */; };
+		8749B85028E0134F00A718AC /* HourMessageString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8749B84F28E0134F00A718AC /* HourMessageString.strings */; };
+		8749B85228E0135C00A718AC /* HourMessageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B85128E0135C00A718AC /* HourMessageString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		8749B81828E010AD00A718AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8749B81A28E010AD00A718AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8749B81C28E010AD00A718AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8749B81F28E010AD00A718AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8749B82128E010AF00A718AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8749B82428E010AF00A718AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8749B82628E010AF00A718AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		8749B83528E010AF00A718AC /* HourMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HourMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8749B83928E010AF00A718AC /* HourMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageUITests.swift; sourceTree = "<group>"; };
 		8749B83B28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8749B84A28E0117900A718AC /* HourMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageView.swift; sourceTree = "<group>"; };
+		8749B84C28E0119400A718AC /* String+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Resources.swift"; sourceTree = "<group>"; };
+		8749B84F28E0134F00A718AC /* HourMessageString.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HourMessageString.strings; sourceTree = "<group>"; };
+		8749B85128E0135C00A718AC /* HourMessageString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		8749B81728E010AD00A718AC /* HourMessage */ = {
 			isa = PBXGroup;
 			children = (
+				8749B84928E0116900A718AC /* Helpers */,
+				8749B84828E0116300A718AC /* Scenes */,
 				8749B81828E010AD00A718AC /* AppDelegate.swift */,
 				8749B81A28E010AD00A718AC /* SceneDelegate.swift */,
 				8749B81C28E010AD00A718AC /* ViewController.swift */,
-				8749B81E28E010AD00A718AC /* Main.storyboard */,
 				8749B82128E010AF00A718AC /* Assets.xcassets */,
 				8749B82328E010AF00A718AC /* LaunchScreen.storyboard */,
 				8749B82628E010AF00A718AC /* Info.plist */,
@@ -125,6 +132,32 @@
 				8749B83B28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift */,
 			);
 			path = HourMessageUITests;
+			sourceTree = "<group>";
+		};
+		8749B84828E0116300A718AC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8749B84E28E0133B00A718AC /* Resources */,
+				8749B84A28E0117900A718AC /* HourMessageView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8749B84928E0116900A718AC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8749B84C28E0119400A718AC /* String+Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8749B84E28E0133B00A718AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8749B84F28E0134F00A718AC /* HourMessageString.strings */,
+				8749B85128E0135C00A718AC /* HourMessageString.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +266,7 @@
 			files = (
 				8749B82528E010AF00A718AC /* LaunchScreen.storyboard in Resources */,
 				8749B82228E010AF00A718AC /* Assets.xcassets in Resources */,
-				8749B82028E010AD00A718AC /* Main.storyboard in Resources */,
+				8749B85028E0134F00A718AC /* HourMessageString.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +293,10 @@
 			files = (
 				8749B81D28E010AD00A718AC /* ViewController.swift in Sources */,
 				8749B81928E010AD00A718AC /* AppDelegate.swift in Sources */,
+				8749B84B28E0117900A718AC /* HourMessageView.swift in Sources */,
 				8749B81B28E010AD00A718AC /* SceneDelegate.swift in Sources */,
+				8749B85228E0135C00A718AC /* HourMessageString.swift in Sources */,
+				8749B84D28E0119400A718AC /* String+Resources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8749B81E28E010AD00A718AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8749B81F28E010AD00A718AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8749B82328E010AF00A718AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +469,6 @@
 				INFOPLIST_FILE = HourMessage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +495,6 @@
 				INFOPLIST_FILE = HourMessage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
