@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8707879628E2594E0069AAEB /* HourMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707879528E2594E0069AAEB /* HourMessageViewController.swift */; };
 		8749B81928E010AD00A718AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81828E010AD00A718AC /* AppDelegate.swift */; };
 		8749B81B28E010AD00A718AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81A28E010AD00A718AC /* SceneDelegate.swift */; };
 		8749B81D28E010AD00A718AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81C28E010AD00A718AC /* ViewController.swift */; };
@@ -19,6 +20,8 @@
 		8749B84D28E0119400A718AC /* String+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B84C28E0119400A718AC /* String+Resources.swift */; };
 		8749B85028E0134F00A718AC /* HourMessageString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8749B84F28E0134F00A718AC /* HourMessageString.strings */; };
 		8749B85228E0135C00A718AC /* HourMessageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B85128E0135C00A718AC /* HourMessageString.swift */; };
+		8749B85428E1333B00A718AC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B85328E1333B00A718AC /* UIColor.swift */; };
+		8749B85928E135FE00A718AC /* HourMessageSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B85828E135FE00A718AC /* HourMessageSnapshotTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8707879528E2594E0069AAEB /* HourMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageViewController.swift; sourceTree = "<group>"; };
 		8749B81528E010AD00A718AC /* HourMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8749B81828E010AD00A718AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8749B81A28E010AD00A718AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		8749B84C28E0119400A718AC /* String+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Resources.swift"; sourceTree = "<group>"; };
 		8749B84F28E0134F00A718AC /* HourMessageString.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HourMessageString.strings; sourceTree = "<group>"; };
 		8749B85128E0135C00A718AC /* HourMessageString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageString.swift; sourceTree = "<group>"; };
+		8749B85328E1333B00A718AC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		8749B85828E135FE00A718AC /* HourMessageSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageSnapshotTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				8749B82F28E010AF00A718AC /* HourMessageTests.swift */,
+				8749B85828E135FE00A718AC /* HourMessageSnapshotTest.swift */,
 			);
 			path = HourMessageTests;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 			children = (
 				8749B84E28E0133B00A718AC /* Resources */,
 				8749B84A28E0117900A718AC /* HourMessageView.swift */,
+				8707879528E2594E0069AAEB /* HourMessageViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				8749B84C28E0119400A718AC /* String+Resources.swift */,
+				8749B85328E1333B00A718AC /* UIColor.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -176,6 +185,8 @@
 			dependencies = (
 			);
 			name = HourMessage;
+			packageProductDependencies = (
+			);
 			productName = HourMessage;
 			productReference = 8749B81528E010AD00A718AC /* HourMessage.app */;
 			productType = "com.apple.product-type.application";
@@ -248,6 +259,10 @@
 				Base,
 			);
 			mainGroup = 8749B80C28E010AD00A718AC;
+			packageReferences = (
+				8749B85528E1357E00A718AC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				8749B85A28E1366700A718AC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 8749B81628E010AD00A718AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,8 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8749B81D28E010AD00A718AC /* ViewController.swift in Sources */,
+				8749B85428E1333B00A718AC /* UIColor.swift in Sources */,
 				8749B81928E010AD00A718AC /* AppDelegate.swift in Sources */,
 				8749B84B28E0117900A718AC /* HourMessageView.swift in Sources */,
+				8707879628E2594E0069AAEB /* HourMessageViewController.swift in Sources */,
 				8749B81B28E010AD00A718AC /* SceneDelegate.swift in Sources */,
 				8749B85228E0135C00A718AC /* HourMessageString.swift in Sources */,
 				8749B84D28E0119400A718AC /* String+Resources.swift in Sources */,
@@ -305,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8749B83028E010AF00A718AC /* HourMessageTests.swift in Sources */,
+				8749B85928E135FE00A718AC /* HourMessageSnapshotTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8749B85528E1357E00A718AC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		8749B85A28E1366700A718AC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8749B80D28E010AD00A718AC /* Project object */;
 }

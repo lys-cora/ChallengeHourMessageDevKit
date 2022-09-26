@@ -34,7 +34,7 @@ class HourMessageView: UIView {
     }
     
     func buildViews() {
-        backgroundColor = .white
+        backgroundColor = UIColor(red: 0, green: 103, blue: 216, alpha: 0.05)
         addSubview(messageLabel)
         addSubview(image)
     }
