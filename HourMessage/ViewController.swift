@@ -6,16 +6,17 @@ protocol HourMessageProtocol {
 
 class ViewController: UIViewController, HourMessageProtocol {
     
+    let hourMessage: HourMessage?
+    
     init() {
+        self.hourMessage = HourMessage()
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
-    
+   
     override func viewDidLoad() {
         setupViews()
     }
@@ -32,8 +33,11 @@ class ViewController: UIViewController, HourMessageProtocol {
     
     @objc func openSeePeriodScreen() {
         print("passou?")
-        let controller = HourMessageViewController(hourMessageProtocol: self)
-        navigationController?.pushViewController(controller, animated: true)
+        if let hourMessage = hourMessage {}
+        
+        let controller = HourMessageViewController(hourMessage: hourMessage!)
+        let navigationController = UINavigationController(rootViewController: UIViewController())
+        navigationController.pushViewController(controller, animated: true)
     }
     
     

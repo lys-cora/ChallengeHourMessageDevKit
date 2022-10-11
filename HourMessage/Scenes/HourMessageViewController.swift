@@ -13,7 +13,7 @@ class HourMessageViewController: UIViewController {
     var evening: Bool?
     var night: Bool?
     var dateNow: Date?
-    var hourMessageProtocol: HourMessageProtocol
+    var hourMessage: HourMessage
     
     private lazy var hourMessageView: HourMessageView = {
         let view = HourMessageView()
@@ -21,8 +21,8 @@ class HourMessageViewController: UIViewController {
         return view
     }()
     
-    init(hourMessageProtocol: HourMessageProtocol) {
-        self.hourMessageProtocol = hourMessageProtocol
+    init(hourMessage: HourMessage = HourMessage()) {
+        self.hourMessage = hourMessage
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -34,8 +34,7 @@ class HourMessageViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(hourMessageView)
         
-        verifyPeriod(dateNow: dateNow ?? Date.now)
-        
+        verifyPeriod(dateNow: hourMessage.getCurrentDate())
         setupConstraints()
     }
     
@@ -66,8 +65,8 @@ class HourMessageViewController: UIViewController {
     
     func verifyHour(hour: Int) {
         morning = hour >= 6 && hour < 12
-        evening = hour >= 12 && hour < 18
-        night = hour >= 18 && hour < 24
+        evening = hour >= 12 && hour < 17
+        night = hour >= 17 && hour < 24
         
     }
     
