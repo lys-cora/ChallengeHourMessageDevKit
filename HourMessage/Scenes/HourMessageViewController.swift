@@ -7,6 +7,14 @@
 
 import UIKit
 
+enum Period {
+    case morning
+    case evening
+    case night
+    case dawn
+    case notFound
+}
+
 class HourMessageViewController: UIViewController {
     
     private var hourMessage: HourMessage
@@ -22,6 +30,10 @@ class HourMessageViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -30,53 +42,53 @@ class HourMessageViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(hourMessageView)
         
-        verifyPeriod(dateNow: hourMessage.getCurrentDate())
+        verifyPeriod()
         setupConstraints()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(callVerifyPeriod), name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(printScreen), name: UIApplication.userDidTakeScreenshotNotification, object: nil)
     }
     
-    func verifyPeriod(dateNow: Date) {
-        let hour = Calendar.current.dateComponents([.hour], from: dateNow).hour ?? 0
-        
-        switch UIApplication.shared.applicationState {
-        case .active:
-            print("to recebendo eventos, foreground")// The app is running in the foreground and currently receiving events.
-        case .inactive:
-            print("to inativo")// The app is running in the foreground but is not receiving events. This might happen as a result of an interruption or because the app is transitioning to or from the background.
-        case .background:
-            print("to em background galera")// The app is running in the background.
-        @unknown default:
-            fatalError()
-        }
-        
-        verifyIfPeriodIsMorning(hour: hour)
-        verifyIfPeriodIsEvening(hour: hour)
-        verifyIfPeriodIsNight(hour: hour)
-        
-        updateHourMessageView(message: HourMessageString.messageDawn.localized, image: "dawn")
+    @objc func printScreen() {
+        print("printou")
     }
     
-    func verifyIfPeriodIsMorning(hour: Int) {
-        if hour >= 6 && hour < 12 {
+    @objc func callVerifyPeriod() {
+        verifyPeriod()
+    }
+    
+    @discardableResult func verifyPeriod() -> Period {
+        let hour = Calendar.current.dateComponents([.hour], from: hourMessage.getCurrentDate()).hour ?? 0
+
+        print("rodando função")
+        
+        if isMorning(hour: hour) {
             updateHourMessageView(message: HourMessageString.messageMorning.localized, image: "morning")
-            
-            return
-        }
-    }
-    
-    func verifyIfPeriodIsEvening(hour: Int) {
-        if hour >= 12 && hour < 17 {
+            return .morning
+        } else if isEvening(hour: hour) {
             updateHourMessageView(message: HourMessageString.messageEvening.localized, image: "evening")
-            
-            return
+            return .evening
+        } else if isNight(hour: hour) {
+            updateHourMessageView(message: HourMessageString.messageNight.localized, image: "night")
+            return .night
+        } else {
+            updateHourMessageView(message: HourMessageString.messageDawn.localized, image: "dawn")
+            return .dawn
         }
+        
+        return .notFound
     }
     
-    func verifyIfPeriodIsNight(hour: Int) {
-        if hour >= 17 && hour < 24 {
-            updateHourMessageView(message: HourMessageString.messageNight.localized, image: "night")
-            
-            return
-        }
+    func isMorning(hour: Int) -> Bool {
+        hour >= 6 && hour < 12
+    }
+    
+    func isEvening(hour: Int) -> Bool {
+        hour >= 12 && hour < 17
+    }
+    
+    func isNight(hour: Int) -> Bool {
+        hour >= 17 && hour < 24
     }
     
     func updateHourMessageView(message: String, image: String) {
