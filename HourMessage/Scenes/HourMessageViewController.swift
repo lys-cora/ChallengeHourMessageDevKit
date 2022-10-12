@@ -84,11 +84,11 @@ class HourMessageViewController: UIViewController {
     }
     
     func isEvening(hour: Int) -> Bool {
-        hour >= 12 && hour < 17
+        hour >= 12 && hour < 18
     }
     
     func isNight(hour: Int) -> Bool {
-        hour >= 17 && hour < 24
+        hour >= 18 && hour < 24
     }
     
     func updateHourMessageView(message: String, image: String) {
