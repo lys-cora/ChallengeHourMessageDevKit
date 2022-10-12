@@ -9,31 +9,23 @@
 /* Begin PBXBuildFile section */
 		8707879628E2594E0069AAEB /* HourMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707879528E2594E0069AAEB /* HourMessageViewController.swift */; };
 		8707879828E271240069AAEB /* HourMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8707879728E271240069AAEB /* HourMessage.swift */; };
+		870D43E228F77E7000EDF4F2 /* HourMessageUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870D43E128F77E7000EDF4F2 /* HourMessageUnitTests.swift */; };
+		870D43E828F77E7600EDF4F2 /* HourMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B82F28E010AF00A718AC /* HourMessageTests.swift */; };
+		870D43E928F77E7700EDF4F2 /* HourMessageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874DD3B628F77A3E00A4F6A9 /* HourMessageMock.swift */; };
 		8749B81928E010AD00A718AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81828E010AD00A718AC /* AppDelegate.swift */; };
 		8749B81B28E010AD00A718AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81A28E010AD00A718AC /* SceneDelegate.swift */; };
 		8749B81D28E010AD00A718AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B81C28E010AD00A718AC /* ViewController.swift */; };
 		8749B82228E010AF00A718AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8749B82128E010AF00A718AC /* Assets.xcassets */; };
 		8749B82528E010AF00A718AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8749B82328E010AF00A718AC /* LaunchScreen.storyboard */; };
-		8749B83028E010AF00A718AC /* HourMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B82F28E010AF00A718AC /* HourMessageTests.swift */; };
-		8749B83A28E010AF00A718AC /* HourMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B83928E010AF00A718AC /* HourMessageUITests.swift */; };
-		8749B83C28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B83B28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift */; };
 		8749B84B28E0117900A718AC /* HourMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B84A28E0117900A718AC /* HourMessageView.swift */; };
 		8749B84D28E0119400A718AC /* String+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B84C28E0119400A718AC /* String+Resources.swift */; };
 		8749B85028E0134F00A718AC /* HourMessageString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8749B84F28E0134F00A718AC /* HourMessageString.strings */; };
 		8749B85228E0135C00A718AC /* HourMessageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B85128E0135C00A718AC /* HourMessageString.swift */; };
 		8749B85428E1333B00A718AC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B85328E1333B00A718AC /* UIColor.swift */; };
-		8749B85928E135FE00A718AC /* HourMessageSnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749B85828E135FE00A718AC /* HourMessageSnapshotTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8749B82C28E010AF00A718AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8749B80D28E010AD00A718AC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8749B81428E010AD00A718AC;
-			remoteInfo = HourMessage;
-		};
-		8749B83628E010AF00A718AC /* PBXContainerItemProxy */ = {
+		870D43E328F77E7000EDF4F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8749B80D28E010AD00A718AC /* Project object */;
 			proxyType = 1;
@@ -45,6 +37,8 @@
 /* Begin PBXFileReference section */
 		8707879528E2594E0069AAEB /* HourMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageViewController.swift; sourceTree = "<group>"; };
 		8707879728E271240069AAEB /* HourMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessage.swift; sourceTree = "<group>"; };
+		870D43DF28F77E7000EDF4F2 /* HourMessageUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HourMessageUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		870D43E128F77E7000EDF4F2 /* HourMessageUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageUnitTests.swift; sourceTree = "<group>"; };
 		8749B81528E010AD00A718AC /* HourMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8749B81828E010AD00A718AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8749B81A28E010AD00A718AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,35 +46,24 @@
 		8749B82128E010AF00A718AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8749B82428E010AF00A718AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8749B82628E010AF00A718AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8749B82B28E010AF00A718AC /* HourMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HourMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8749B82F28E010AF00A718AC /* HourMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageTests.swift; sourceTree = "<group>"; };
-		8749B83528E010AF00A718AC /* HourMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HourMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8749B83928E010AF00A718AC /* HourMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageUITests.swift; sourceTree = "<group>"; };
-		8749B83B28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8749B84A28E0117900A718AC /* HourMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageView.swift; sourceTree = "<group>"; };
 		8749B84C28E0119400A718AC /* String+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Resources.swift"; sourceTree = "<group>"; };
 		8749B84F28E0134F00A718AC /* HourMessageString.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HourMessageString.strings; sourceTree = "<group>"; };
 		8749B85128E0135C00A718AC /* HourMessageString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageString.swift; sourceTree = "<group>"; };
 		8749B85328E1333B00A718AC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		8749B85828E135FE00A718AC /* HourMessageSnapshotTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageSnapshotTest.swift; sourceTree = "<group>"; };
+		874DD3B628F77A3E00A4F6A9 /* HourMessageMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMessageMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		870D43DC28F77E7000EDF4F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8749B81228E010AD00A718AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8749B82828E010AF00A718AC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8749B83228E010AF00A718AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,12 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		870D43E028F77E7000EDF4F2 /* HourMessageUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				874DD3B628F77A3E00A4F6A9 /* HourMessageMock.swift */,
+				8749B82F28E010AF00A718AC /* HourMessageTests.swift */,
+				870D43E128F77E7000EDF4F2 /* HourMessageUnitTests.swift */,
+			);
+			path = HourMessageUnitTests;
+			sourceTree = "<group>";
+		};
 		8749B80C28E010AD00A718AC = {
 			isa = PBXGroup;
 			children = (
 				8749B81728E010AD00A718AC /* HourMessage */,
 				8749B82E28E010AF00A718AC /* HourMessageTests */,
-				8749B83828E010AF00A718AC /* HourMessageUITests */,
+				870D43E028F77E7000EDF4F2 /* HourMessageUnitTests */,
 				8749B81628E010AD00A718AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,8 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				8749B81528E010AD00A718AC /* HourMessage.app */,
-				8749B82B28E010AF00A718AC /* HourMessageTests.xctest */,
-				8749B83528E010AF00A718AC /* HourMessageUITests.xctest */,
+				870D43DF28F77E7000EDF4F2 /* HourMessageUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,19 +120,8 @@
 		8749B82E28E010AF00A718AC /* HourMessageTests */ = {
 			isa = PBXGroup;
 			children = (
-				8749B82F28E010AF00A718AC /* HourMessageTests.swift */,
-				8749B85828E135FE00A718AC /* HourMessageSnapshotTest.swift */,
 			);
 			path = HourMessageTests;
-			sourceTree = "<group>";
-		};
-		8749B83828E010AF00A718AC /* HourMessageUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8749B83928E010AF00A718AC /* HourMessageUITests.swift */,
-				8749B83B28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift */,
-			);
-			path = HourMessageUITests;
 			sourceTree = "<group>";
 		};
 		8749B84828E0116300A718AC /* Scenes */ = {
@@ -175,6 +156,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		870D43DE28F77E7000EDF4F2 /* HourMessageUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870D43E728F77E7000EDF4F2 /* Build configuration list for PBXNativeTarget "HourMessageUnitTests" */;
+			buildPhases = (
+				870D43DB28F77E7000EDF4F2 /* Sources */,
+				870D43DC28F77E7000EDF4F2 /* Frameworks */,
+				870D43DD28F77E7000EDF4F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870D43E428F77E7000EDF4F2 /* PBXTargetDependency */,
+			);
+			name = HourMessageUnitTests;
+			productName = HourMessageUnitTests;
+			productReference = 870D43DF28F77E7000EDF4F2 /* HourMessageUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8749B81428E010AD00A718AC /* HourMessage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8749B83F28E010AF00A718AC /* Build configuration list for PBXNativeTarget "HourMessage" */;
@@ -194,42 +193,6 @@
 			productReference = 8749B81528E010AD00A718AC /* HourMessage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8749B82A28E010AF00A718AC /* HourMessageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8749B84228E010AF00A718AC /* Build configuration list for PBXNativeTarget "HourMessageTests" */;
-			buildPhases = (
-				8749B82728E010AF00A718AC /* Sources */,
-				8749B82828E010AF00A718AC /* Frameworks */,
-				8749B82928E010AF00A718AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8749B82D28E010AF00A718AC /* PBXTargetDependency */,
-			);
-			name = HourMessageTests;
-			productName = HourMessageTests;
-			productReference = 8749B82B28E010AF00A718AC /* HourMessageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8749B83428E010AF00A718AC /* HourMessageUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8749B84528E010AF00A718AC /* Build configuration list for PBXNativeTarget "HourMessageUITests" */;
-			buildPhases = (
-				8749B83128E010AF00A718AC /* Sources */,
-				8749B83228E010AF00A718AC /* Frameworks */,
-				8749B83328E010AF00A718AC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8749B83728E010AF00A718AC /* PBXTargetDependency */,
-			);
-			name = HourMessageUITests;
-			productName = HourMessageUITests;
-			productReference = 8749B83528E010AF00A718AC /* HourMessageUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,16 +203,12 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					870D43DE28F77E7000EDF4F2 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 8749B81428E010AD00A718AC;
+					};
 					8749B81428E010AD00A718AC = {
 						CreatedOnToolsVersion = 13.4;
-					};
-					8749B82A28E010AF00A718AC = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = 8749B81428E010AD00A718AC;
-					};
-					8749B83428E010AF00A718AC = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = 8749B81428E010AD00A718AC;
 					};
 				};
 			};
@@ -271,13 +230,19 @@
 			projectRoot = "";
 			targets = (
 				8749B81428E010AD00A718AC /* HourMessage */,
-				8749B82A28E010AF00A718AC /* HourMessageTests */,
-				8749B83428E010AF00A718AC /* HourMessageUITests */,
+				870D43DE28F77E7000EDF4F2 /* HourMessageUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		870D43DD28F77E7000EDF4F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8749B81328E010AD00A718AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,23 +253,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8749B82928E010AF00A718AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8749B83328E010AF00A718AC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		870D43DB28F77E7000EDF4F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870D43E928F77E7700EDF4F2 /* HourMessageMock.swift in Sources */,
+				870D43E228F77E7000EDF4F2 /* HourMessageUnitTests.swift in Sources */,
+				870D43E828F77E7600EDF4F2 /* HourMessageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8749B81128E010AD00A718AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,36 +282,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8749B82728E010AF00A718AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8749B83028E010AF00A718AC /* HourMessageTests.swift in Sources */,
-				8749B85928E135FE00A718AC /* HourMessageSnapshotTest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8749B83128E010AF00A718AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8749B83C28E010AF00A718AC /* HourMessageUITestsLaunchTests.swift in Sources */,
-				8749B83A28E010AF00A718AC /* HourMessageUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8749B82D28E010AF00A718AC /* PBXTargetDependency */ = {
+		870D43E428F77E7000EDF4F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8749B81428E010AD00A718AC /* HourMessage */;
-			targetProxy = 8749B82C28E010AF00A718AC /* PBXContainerItemProxy */;
-		};
-		8749B83728E010AF00A718AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8749B81428E010AD00A718AC /* HourMessage */;
-			targetProxy = 8749B83628E010AF00A718AC /* PBXContainerItemProxy */;
+			targetProxy = 870D43E328F77E7000EDF4F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -366,6 +304,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		870D43E528F77E7000EDF4F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lys.HourMessageUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HourMessage.app/HourMessage";
+			};
+			name = Debug;
+		};
+		870D43E628F77E7000EDF4F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lys.HourMessageUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HourMessage.app/HourMessage";
+			};
+			name = Release;
+		};
 		8749B83D28E010AF00A718AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -532,81 +504,18 @@
 			};
 			name = Release;
 		};
-		8749B84328E010AF00A718AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lys.HourMessageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HourMessage.app/HourMessage";
-			};
-			name = Debug;
-		};
-		8749B84428E010AF00A718AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lys.HourMessageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HourMessage.app/HourMessage";
-			};
-			name = Release;
-		};
-		8749B84628E010AF00A718AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lys.HourMessageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HourMessage;
-			};
-			name = Debug;
-		};
-		8749B84728E010AF00A718AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lys.HourMessageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HourMessage;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		870D43E728F77E7000EDF4F2 /* Build configuration list for PBXNativeTarget "HourMessageUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870D43E528F77E7000EDF4F2 /* Debug */,
+				870D43E628F77E7000EDF4F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8749B81028E010AD00A718AC /* Build configuration list for PBXProject "HourMessage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -621,24 +530,6 @@
 			buildConfigurations = (
 				8749B84028E010AF00A718AC /* Debug */,
 				8749B84128E010AF00A718AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8749B84228E010AF00A718AC /* Build configuration list for PBXNativeTarget "HourMessageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8749B84328E010AF00A718AC /* Debug */,
-				8749B84428E010AF00A718AC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8749B84528E010AF00A718AC /* Build configuration list for PBXNativeTarget "HourMessageUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8749B84628E010AF00A718AC /* Debug */,
-				8749B84728E010AF00A718AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

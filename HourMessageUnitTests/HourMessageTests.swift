@@ -43,12 +43,24 @@ class HourMessageTests: XCTestCase {
         XCTAssertEqual(viewController.isEvening(hour: hour), true)
     }
     
+    func test_WhenHourIs13Pm_SoVerifyPeriodReturnEvening() throws {
+        let evening = HourMessageEveningMock()
+        let viewController = HourMessageViewController(hourMessage: evening)
+        XCTAssertEqual(viewController.verifyPeriod(), Period.evening)
+    }
+    
     func test_WhenHourIs20Pm_SoNightReturnTrue() throws {
         let morningSixAm = try XCTUnwrap(dateFormatter.date(from: "20:00:00"))
         let viewController = HourMessageViewController()
         viewController.verifyPeriod()
         let hour = try XCTUnwrap(Calendar.current.dateComponents([.hour], from: morningSixAm).hour)
         XCTAssertEqual(viewController.isNight(hour: hour), true)
+    }
+    
+    func test_WhenHourIs20Pm_SoVerifyPeriodReturnNight() throws {
+        let night = HourMessageNightMock()
+        let viewController = HourMessageViewController(hourMessage: night)
+        XCTAssertEqual(viewController.verifyPeriod(), Period.night)
     }
     
     func test_WhenHourIs2Am_SoMorningAndEveningAndNightReturnFalse() throws {
@@ -61,4 +73,9 @@ class HourMessageTests: XCTestCase {
         XCTAssertEqual(viewController.isNight(hour: hour), false)
     }
 
+    func test_WhenHourIs2Am_SoVerifyPeriodReturnDawn() throws {
+        let dawn = HourMessageDawnMock()
+        let viewController = HourMessageViewController(hourMessage: dawn)
+        XCTAssertEqual(viewController.verifyPeriod(), Period.dawn)
+    }
 }
