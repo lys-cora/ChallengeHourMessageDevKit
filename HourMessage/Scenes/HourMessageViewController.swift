@@ -9,11 +9,7 @@ import UIKit
 
 class HourMessageViewController: UIViewController {
     
-    var morning: Bool?
-    var evening: Bool?
-    var night: Bool?
-    var dateNow: Date?
-    var hourMessage: HourMessage
+    private var hourMessage: HourMessage
     
     private lazy var hourMessageView: HourMessageView = {
         let view = HourMessageView()
@@ -39,35 +35,48 @@ class HourMessageViewController: UIViewController {
     }
     
     func verifyPeriod(dateNow: Date) {
-        let hour = Calendar.current.dateComponents([.hour, .minute, .second], from: dateNow).hour ?? 0
-        verifyHour(hour: hour)
+        let hour = Calendar.current.dateComponents([.hour], from: dateNow).hour ?? 0
         
-        if morning ?? false {
-            updateHourMessageView(message: HourMessageString.messageMorning.localized, image: "morning")
-            
-            return
+        switch UIApplication.shared.applicationState {
+        case .active:
+            print("to recebendo eventos, foreground")// The app is running in the foreground and currently receiving events.
+        case .inactive:
+            print("to inativo")// The app is running in the foreground but is not receiving events. This might happen as a result of an interruption or because the app is transitioning to or from the background.
+        case .background:
+            print("to em background galera")// The app is running in the background.
+        @unknown default:
+            fatalError()
         }
         
-        if evening ?? false {
-            updateHourMessageView(message: HourMessageString.messageEvening.localized, image: "evening")
-            
-            return
-        }
-        
-        if night ?? false {
-            updateHourMessageView(message: HourMessageString.messageNight.localized, image: "night")
-            
-            return
-        }
+        verifyIfPeriodIsMorning(hour: hour)
+        verifyIfPeriodIsEvening(hour: hour)
+        verifyIfPeriodIsNight(hour: hour)
         
         updateHourMessageView(message: HourMessageString.messageDawn.localized, image: "dawn")
     }
     
-    func verifyHour(hour: Int) {
-        morning = hour >= 6 && hour < 12
-        evening = hour >= 12 && hour < 17
-        night = hour >= 17 && hour < 24
-        
+    func verifyIfPeriodIsMorning(hour: Int) {
+        if hour >= 6 && hour < 12 {
+            updateHourMessageView(message: HourMessageString.messageMorning.localized, image: "morning")
+            
+            return
+        }
+    }
+    
+    func verifyIfPeriodIsEvening(hour: Int) {
+        if hour >= 12 && hour < 17 {
+            updateHourMessageView(message: HourMessageString.messageEvening.localized, image: "evening")
+            
+            return
+        }
+    }
+    
+    func verifyIfPeriodIsNight(hour: Int) {
+        if hour >= 17 && hour < 24 {
+            updateHourMessageView(message: HourMessageString.messageNight.localized, image: "night")
+            
+            return
+        }
     }
     
     func updateHourMessageView(message: String, image: String) {
